@@ -1,13 +1,66 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: fantasy;
+	text-align: center;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	transition: all 300ms ease;
+	border-radius: 50%;
+}
+button:hover {
+	background-color: #ddd;
+	color: #222;
+}
+/* header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+} */
+button {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	transition: all 300ms ease;
+	background: #ece9e6;
+	border: none;
+	/* position: absolute; */
+	/* height: 25%; */
+	/* top: 40%; */
+}
+input {
+	display: block;
+	margin: 5px 0 5px;
+}
+.buttons:hover {
+	background-color: rosybrown;
+}
+.item,
+.category {
+	flex-basis: 33%;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 0;
+	text-align: center;
+}
+.item-list,
+.category-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+img {
+	height: 100px;
+}
+.forms {
+	text-align: center;
+}
+.form {
+	display: inline-block;
 }
